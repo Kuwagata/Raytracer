@@ -1,0 +1,96 @@
+# Ray Tracer 1 Sample World File
+0 0  4        #viewpoint (x, y, z)
+8 6           #world x and y dims
+
+# Infinite Plane 1 (floor)
+plane
+5 0 0         #r g b ambient
+1             #diffuse lighting intensity
+0             #specular lighting intensity
+# Plane specific data
+ 0 -3 -1      #point
+ 0 1 0        #normal
+
+# Infinite Plane 2 (back)
+plane
+0 0 5         #r g b ambient
+1             #diffuse lighting intensity
+0             #specular lighting intensity
+# Plane specific data
+ 0 -3  -8     #point
+ 0 0  1       #normal
+ 
+# Infinite Plane 3 (left wall)
+plane
+0 5 0         #r g b ambient
+1             #diffuse lighting intensity
+0             #specular lighting intensity
+# Plane specific data
+ -6 -3 -3     #point
+ 1 0 0        #normal
+ 
+# Infinite Plane 4 (right wall)
+plane
+5 5 5         #r g b ambient
+1             #diffuse lighting intensity
+0             #specular lighting intensity
+# Plane specific data
+ 6 -3 -3      #point
+ -1 0 0       #normal
+
+# Left Rectangle
+rectangle
+5 8 4         #r g b ambient
+1             #r g b diffuse
+0             #r g b specular
+# Plane specific data
+-4.0 0 -4    #point
+ 1  0  0     #normal
+# Rectangle Specific Data
+ 1 1 0        # Orientation
+ 2 2          # Orientation and dimensions
+ 
+# Right Rectangle
+rectangle
+5 8 4         #r g b ambient
+1             #r g b diffuse
+0             #r g b specular
+# Plane specific data
+ 4.0 0 -4     #point
+ 1  0  0     #normal
+# Rectangle Specific Data
+ 1 1 0        # Orientation
+ 2 2          # Orientation and dimensions
+
+# light
+pointlight
+8 8 8         #emissivity
+0 0 -4        #center
+
+# Left side triangle
+triangle
+8 12 3            #r g b ambient
+1                 #r g b diffuse
+0                 #r g b specular
+# Plane specific data
+  3 -3 -3         #point
+  0 0 1           #normal
+# Triangle specific data
+ -1 1 0           # edge 1 orientation
+ 3                # edge 1 length
+ -1 -1 0          # edge 2 orientation
+ 3                # edge 2 length
+ 
+# sphere
+sphere
+2 10 9            #r g b ambient
+1                 #r g b diffuse
+0                 #r g b specular
+# Sphere specific data
+0 5 -6            #center 
+1                 #radius
+
+# light
+pointlight
+5 5 5         #emissivity
+3 6 -4        #center

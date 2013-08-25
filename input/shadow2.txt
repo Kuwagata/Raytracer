@@ -1,0 +1,49 @@
+# Ray Tracer 2 Sample Picture
+0 0  4        #viewpoint (x, y, z)
+10 8          #world x and y dims
+
+# Light source 1
+pointlight
+3 3 3         # Emissivity
+-4 0 -0.25    # Center of light
+
+# Sphere 1
+sphere
+4 1 4         #r g b ambient
+1             #r g b diffuse
+0             #r g b specular
+# Sphere specific data
+-3.5 0 -1.5   #center 
+0.40          #radius
+
+# Rectangle 1 (right)
+rectangle
+5 0 0         #r g b ambient
+1             #r g b diffuse
+0             #r g b specular
+# Plane specific data
+-4.0 -5 -4    #point
+ -1  0  2     #normal
+# Rectangle Specific Data
+ 1 0 0        # Orientation
+ 4 7          # Orientation and dimensions
+
+# Background plane
+plane
+10 10 7       #r g b ambient
+1             #r g b diffuse
+0             #r g b specular
+# Plane specific data
+0  -5 -11.0   #point
+ -1  0  2     #normal
+
+# Floor
+plane
+1 1 5        #r g b ambient
+1            #diffuse
+0            #specular
+# Plane specific data
+0 -5 0       #point
+0 1 0        #normal
+
+

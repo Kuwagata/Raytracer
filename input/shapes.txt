@@ -1,0 +1,29 @@
+# Ray Tracer 2 Sample Picture
+0 0  4        #viewpoint (x, y, z)
+8 6           #world x and y dims
+
+# Triangle 1
+triangle
+8 0 0             #r g b ambient
+1                 #r g b diffuse
+0                 #r g b specular
+# Plane specific data
+  -4 -3 -4        #point
+  0 0 1           #normal
+# Triangle specific data
+ 6 1 0            # edge 1 orientation
+ 4                # edge 1 length
+ 1 8 0            # edge 2 orientation
+ 5                # edge 2 length
+
+# Rectangle
+rectangle
+0 0 8            #r g b ambient
+1                #r g b diffuse
+0                #r g b specular
+# Plane specific data
+  2 -4 -4        #point
+  0 0 1          #normal
+# Rectangle specific data
+ 1 0 0           # orientation
+ 5 3             # dimensions.

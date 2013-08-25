@@ -1,0 +1,174 @@
+# Ray Tracer 3 -- world with all options
+0 2  5        #viewpoint (x, y, z)
+8 6           #world x and y dims
+
+# Tiled-plane Background
+tplane
+7 7 7      # Foreground colors (mirrors)
+0.9        # Diffuse
+0.9        # Specular
+# Plane specific data
+0 0 -8     # Point
+0 0 1      # Normal
+# tplane specific data
+1 1 0      # Orientation vector for tiles
+1 1        # Tile width/height
+0 0 7      # Background tile color (blue)
+.9         # Diffuse
+.0         # Specular
+
+# Ground (grass)
+pplane
+9 9 9      # Brightness
+0.9        # Diffuse
+0          # Specular
+# Plane specific data
+-40 -4 0   # Point
+0 1 0      # Normal
+# Rectangle specific data
+1 0 0      # Orientation vector
+200 200    # Plane size
+# pplane specific data
+../textures/grass1.ppm # Picture image file
+1 1        # Size of each image
+
+# Light
+pointlight
+6 6 6      # Emissivity
+-2 2 -0.25 # Center of light
+
+# Cylinder 1 (left orange)
+cylinder
+8 4 0      # Color
+0.9        # Diffuse
+0          # Specular
+#Cylinder specific data
+ -2 -3 -6  # center
+0 0 1      # center line
+0.5        # radius
+3          # height
+
+# Cylinder 2 (right orange)
+cylinder
+8 4 0      # Color
+0.9        # Diffuse
+0          # Specular
+#Cylinder specific data
+  2 -3 -6  # center
+0 0 1      # center line
+0.5        # radius
+3          # height
+
+# Cylinder 3 (purple across)
+cylinder
+5 2 6      # Color
+0.9        # Diffuse
+0          # Specular
+#Cylinder specific data
+  -3 -3 -3.4  # center
+1 0 0      # center line
+0.15       # radius
+6          # height
+
+
+# Picture Rectangle (tiger)
+pplane
+6 6 6      # Color
+.75        # Diffuse
+0          # Specular
+#Plane Specific data
+ 3 -1 -3   # Point
+-1 0 0     # Normal
+#Rectangle Specific data
+0 0 1      # Orientation Vector
+3 4        # Width and Length
+#PPlane specific data
+../textures/tiger.ppm  # Image file
+3.0 4.00   # Size of image
+
+# Sphere (silver ball)
+sphere
+4 4 4     # Color
+.75       # Diffuse
+1.0       # Specular
+#Sphere specific data
+-0  -1 -5 # Center
+2         # Radius
+
+# Triangle 1 (red triangle)
+triangle
+8 0 0     # Color
+.75       # Diffuse
+0         # Specular
+# Plane specific data
+-6 -4 -2  #Point
+0 0 1     #Normal
+#Triangle specific data
+ 1 0 0    # edge 1 orientation
+ 2        # edge 1 length
+ 1 1.118  0  # edge 2 orientation
+ 3        # edge 2 length
+
+# Triangle 2 (green triangle)
+triangle
+0 8 0     # Color
+.75       # Diffuse
+0         # Specular
+# Plane specific data
+-6 -4 -5  #Point
+0 0 1     #Normal
+#Triangle specific data
+ 1 0 0    # edge 1 orientation
+ 2        # edge 1 length
+ 1 1.118 0  # edge 2 orientation
+ 3        # edge 2 length
+
+# Cylinder 4 (red cylinder perched on triangles)
+cylinder
+6 0 0     # color
+0.9       # diffuse
+0         # specular
+#Cylinder specific data
+ -4 -1.46 -5.1 # center
+0 0 1     # center line
+0.3       # radius
+3.2       # height
+
+# Cylinder 5 (blue marble circle)
+cylinder  
+3 3 6     # color
+0.9       # diffuse
+0.0       # specular
+#Cylinder specific data
+0 -4 -3   # center
+0 1 0     # center line
+1.25      # radius
+.40       # height
+
+# Sphere (red marble)
+sphere
+4 0 0     # color
+.75       # diffuse
+.75       # specular
+#Sphere specific data
+-0  -3.9 -3.2 # center
+0.2       # radius
+
+# Sphere (green marble)
+sphere
+0 4 0     # color
+.75       # diffuse
+.75       # specular
+#Sphere specific data
+-.5  -3.9 -2.8 # center
+0.2       # radius
+
+# Sphere (blue marble)
+sphere
+0 0 4     # color
+.75       # diffuse
+.75       # specular
+#Sphere specific data
+.5  -3.9 -2.7 # center
+0.2       # radius
+

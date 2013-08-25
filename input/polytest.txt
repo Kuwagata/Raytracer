@@ -1,0 +1,46 @@
+# Ray Tracer 1 Sample World File
+0 0  5        #viewpoint (x, y, z)
+8 6           #world x and y dims
+
+# polytest 1
+polytest
+6 0 0         # Color
+.75           # Diffuse
+0             # Specular
+#Plane Specific data
+-3 -2 -1      # Point 0
+0 0 1         # Normal
+#Rest of points
+4             # Number of points
+-1 -2 -1      # point 1
+-1 0  -1      # point 2
+-3 0  -1      # point 3
+
+# polytest 2
+polytest
+0 6 0         # Color
+.75           # Diffuse
+0             # Specular
+#Plane Specific data
+ 1 -2 -1      # Point 0
+0 0 1         # Normal
+#Rest of points
+3             # Number of points
+ 3 -2 -1      # point 1
+ 2  0 -8      # point 2
+
+# polytest 3
+polytest
+0 0 6         # Color
+.75           # Diffuse
+0             # Specular
+#Plane Specific data
+ -0.5 1 -1    # Point 0
+0 0 1         # Normal
+#Rest of points
+5             # Number of points
+  0.5 1 -1    # point 1
+  1 2   -1    # point 2
+  0 3   -1    # point 3
+  -1 2  -1    # point 4
+  

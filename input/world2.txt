@@ -1,0 +1,34 @@
+# Ray Tracer 3 – textured walls and floor 
+0 2  5        #viewpoint (x, y, z) 
+    
+8 6           #world x and y dims 
+ 
+# Oak 
+pplane 
+9 9 9      # Brightness 
+0.9        # Diffuse 
+0          # Specular 
+# Plane specific data 
+-40 -4 0   # Point 
+0 1 0      # Normal 
+# Rectangle specific data 
+1 0 0      # Orientation vector 
+200 200    # Plane size 
+# pplane specific data 
+../textures/oak.ppm    # Picture image file 
+1 1        # Size of each image 
+ 
+# Bricks 
+pplane 
+9 9 9      # Brightness 
+0.9        # Diffuse 
+0          # Specular 
+# Plane specific data 
+-40 -4 -5  # Point 
+0 0 1      # Normal 
+# Rectangle specific data 
+1 0 0      # Orientation vector 
+200 200    # Plane size 
+# pplane specific data 
+../textures/brick8.ppm # Picture image file 
+2 2        # Size of each image 
